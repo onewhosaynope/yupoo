@@ -19,7 +19,7 @@ def get_photos(url, img_link):
 
 def get_image_name(url):
     url = url.split("/")
-    return "Data/image{}.jpeg".format(url[-2])
+    return "Data/{}".format(url[-2] + url[-1])
 
 
 def load_images_from_album(url):
